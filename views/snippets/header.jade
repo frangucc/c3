@@ -1,0 +1,104 @@
+header#header.transparent-header.dark.full-header.no-sticky
+  #header-wrap
+    .container.clearfix
+      #primary-menu-trigger
+        i.icon-reorder
+      #logo
+        a.standard-logo(href='index.html', data-dark-logo='images/logo-dark.png')
+          img(src='images/logo.png', alt='Canvas Logo')
+        |  
+        a.retina-logo(href='index.html', data-dark-logo='images/logo-dark@2x.png')
+          img(src='images/logo@2x.png', alt='Canvas Logo')
+      // #logo end
+      nav#primary-menu
+        ul
+          li.current
+            a(href='index-fullscreen-slider.html')
+              div Home
+          li#kDropdown.mega-menu
+            a(href='index-shop.html')
+              div Products
+          li.mega-menu
+            a(href='https://support.domeha.com/hc/en-us/categories/115000497488-Integration', target='_blank')
+              div How-To&apos;s
+          li.mega-menu
+            a(href='#')
+              div Blog
+          li.mega-menu
+            a(href='https://support.domeha.com/hc/en-us', target='_blank')
+              div Support
+        #top-cart
+          a#top-cart-trigger(href='#')
+            i.icon-shopping-cart
+            |  
+            span 5
+          .top-cart-content
+            .top-cart-title
+              h4 Shopping Cart
+            .top-cart-items
+              .top-cart-item.clearfix
+                .top-cart-item-image
+                  a(href='#')
+                    img(src='images/shop/small/1.jpg', alt='Blue Round-Neck Tshirt')
+                .top-cart-item-desc
+                  a(href='#') Blue Round-Neck Tshirt
+                  |  
+                  span.top-cart-item-price $19.99
+                  |  
+                  span.top-cart-item-quantity x 2
+              .top-cart-item.clearfix
+                .top-cart-item-image
+                  a(href='#')
+                    img(src='images/shop/small/6.jpg', alt='Light Blue Denim Dress')
+                .top-cart-item-desc
+                  a(href='#') Light Blue Denim Dress
+                  |  
+                  span.top-cart-item-price $24.99
+                  |  
+                  span.top-cart-item-quantity x 3
+            .top-cart-action.clearfix
+              span.fleft.top-checkout-price $114.95
+              |  
+              button.button.button-3d.button-small.nomargin.fright View Cart
+        // #top-cart end
+        #top-search
+          a#top-search-trigger(href='#')
+            i.icon-search3
+            i.icon-line-cross
+          form(action='search.html', method='get')
+            input.form-control(type='text', name='q', value='', placeholder='Type & Hit Enter..')
+        // #top-search end
+      // #primary-menu end
+  .hidden-dropdown.hide_k
+    .row(style='padding-top: 1em; padding-bottom: 2em;')
+      .col-md-6.col-sm-6(style='width: 52% !important;')
+        .prod-nav-cont.border-white
+          h1#h1_k Z-Wave Devices
+          ul#list.list2(style='float: left; padding-right: 3em;')
+            li
+              a(href='#') Motion Sensor
+            li
+              a(href='https://domeha.com/products/z-wave-leak-sensor') Water Detector
+            li
+              a(href='https://domeha.com/products/z-wave-smart-plug-sensor') Smart Plug
+            li
+              a(href='https://domeha.com/products/z-wave-door-and-window-sensor') Door Sensor
+            li
+              a(href='https://domeha.com/products/z-wave-door-and-window-pro-sensor') Door Sensor Pro
+          ul#list.list2(style='float: left;')
+            li
+              a(href='https://domeha.com/products/z-wave-siren-sensor') Siren
+            li
+              a(href='https://domeha.com/products/z-wave-mouser-sensor') Mouser
+            li
+              a(href='https://domeha.com/products/z-wave-water-main-shutoff-sensor') Water Valve
+          div(style='clear: both; margin: auto;')
+            img.img-responsive.lineup_k(src='images/dome-sensors.png', alt='lineup of products')
+      .col-md-6.col-sm-6(style='width: 48%;')
+        .prod-nav-cont-2(style='margin-left: -2em;')
+          img.logo_k.img-responsive(src='images/guardian-text.png', alt='guardian logo')
+          p
+            | A stand-alone system (no hub) with RF, Wifi and LoRa for leak and flood prevention. Z-Wave optional.
+          |  
+          img.img-responsive.product_k(src='images/dome-guardian.png', alt='guardian product')
+// #header end
