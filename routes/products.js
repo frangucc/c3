@@ -47,8 +47,8 @@ router.get('/index-fullscreen-slider', function(req ,res) {
   res.render('index-fullscreen-slider');
 });
 
-router.get('/index-shop', function(req, res) {
-  res.render('index-shop');
+router.get('/index-services', function(req, res) {
+  res.render('index-services');
 });
 
 

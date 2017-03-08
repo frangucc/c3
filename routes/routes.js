@@ -4,8 +4,8 @@ var products = require('../services/products')
 var categories = require('../services/categories.js')
 var brands = require('../services/brands')
 
-router.get('/home', function(req, res) {
-  res.render('index-two')
+router.get('/', function(req, res) {
+  res.render('index')
 });
 
 router.get('/franchino', function(req, res) {
@@ -16,6 +16,10 @@ router.get('/index-fullscreen-slider', function(req ,res) {
   res.render('index-fullscreen-slider');
 });
 
-router.get('/index-shop', function(req, res) {
-  res.render('index-shop');
+router.get('/index-services', function(req, res) {
+  res.render('index-services');
+});
+
+router.get('/index-new', function(req, res) {
+  res.render('index-new');
 });
