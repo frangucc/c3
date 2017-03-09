@@ -20,41 +20,47 @@ html(dir='ltr', lang='en-US')
       Document Title
       =============================================
     title Home - CPG.IO
-  body.stretched.dark
-    //
-      Document Wrapper
-      =============================================
+  body.stretched.dark.no-transition
     #wrapper.clearfix
-      //
-        Header
-        =============================================
       header#header.full-header
         #header-wrap
           .container.clearfix
             #primary-menu-trigger
               i.icon-reorder
-            //
-              Logo
-              =============================================
             #logo
-              a.standard-logo(href='index.html', data-dark-logo='images/logo-dark.png')
+              a.standard-logo(href='/', data-dark-logo='images/logo-dark.png')
                 img(src='images/logo.png', alt='Canvas Logo')
-              a.retina-logo(href='index.html', data-dark-logo='images/logo-dark@2x.png')
+              a.retina-logo(href='/', data-dark-logo='images/logo-dark@2x.png')
                 img(src='images/logo@2x.png', alt='Canvas Logo')
-            // #logo end
-            //
-              Primary Navigation
-              =============================================
             nav#primary-menu
               ul
                 li.current
-                  a(href='index.html')
+                  a(href='/')
                     div Home
                 li
-                  a(href='franchino')
-                    div Services
-                li.mega-menu
                   a(href='#')
+                    div Services
+                  ul
+                    li
+                      a(href='index-supply-chain')
+                        div Supply Chain
+                    li
+                      a(href='index-omni')
+                        div Omni Channel
+                    li
+                      a(href='index-customer-support')
+                        div Customer Support
+                    li
+                      a(href='index-hosting')
+                        div Dev-ops & Hosting
+                    li
+                      a(href='index-marketing')
+                        div Marketing Automation
+                    li
+                      a(href='index-brand')
+                        div Brand & Experience
+                li.mega-menu
+                  a(href='#', data-href='#oc-clients')
                     div Customers
                 li
                   a(href='shop.html')
@@ -62,9 +68,7 @@ html(dir='ltr', lang='en-US')
                 li.mega-menu
                   a(href='#')
                     div Contact
-              //
-                Top Search
-                =============================================
+
               #top-search
                 a#top-search-trigger(href='#')
                   i.icon-search3
@@ -80,15 +84,15 @@ html(dir='ltr', lang='en-US')
             .swiper-wrapper
               .swiper-slide.dark(style="background-image: url('images/slider/swiper/5BL.jpg');")
                 .container.clearfix
-                  .slider-caption.slider-caption-left
+                  .slider-caption.slider-caption-left(style='padding-right:10%;')
                     h2(data-caption-animate='fadeInUp') Complete eCommerce Optimization
-                    p(data-caption-animate='fadeInUp', data-caption-delay='200')
+                    p(data-caption-animate='fadeInUp', data-caption-delay='200', style='padding-right:20%;')
                       | CPG.IO offers a combination of services that put you in control of your entire eCommerce operation.
               .swiper-slide.dark
                 .container.clearfix
-                  .slider-caption.slider-caption-left
+                  .slider-caption.slider-caption-left(style='padding-right:10%;')
                     h2(data-caption-animate='fadeInUp') Supply Chain Management
-                    p(data-caption-animate='fadeInUp', data-caption-delay='200')
+                    p(data-caption-animate='fadeInUp', data-caption-delay='200', style='padding-right:20%;')
                       | CPG.IO was founded on the idea that the fulfillment operation, eCommerce operationcon and content marketing teams could all operate more successfully under one roof.
                 .video-wrap
                   video(poster='images/videos/explore.jpg', preload='auto', loop='', autoplay='', muted='')
@@ -96,9 +100,9 @@ html(dir='ltr', lang='en-US')
                   .video-overlay(style='background-color: rgba(0,0,0,0.55);')
               .swiper-slide.dark
                 .container.clearfix
-                  .slider-caption.slider-caption-left
+                  .slider-caption.slider-caption-left(style='padding-right:10%;')
                     h2(data-caption-animate='fadeInUp') Content Management Services
-                    p(data-caption-animate='fadeInUp', data-caption-delay='200')
+                    p(data-caption-animate='fadeInUp', data-caption-delay='200', style='padding-right:20%;')
                       | CPG.IO helps keep all your content together, can fill in the blank and prepare you for a clever omni channel roll out.
                 .video-wrap
                   video(poster='images/videos/explore.jpg', preload='auto', loop='', autoplay='', muted='')
@@ -108,11 +112,8 @@ html(dir='ltr', lang='en-US')
               i.icon-angle-left
             #slider-arrow-right
               i.icon-angle-right
-    //
-      Content
-      =============================================
     section#content
-      section#section-about.page-section(style='margin-top:5%;')
+      section#section-about.page-section
         .container.clearfix
           .col_three_fifth.topmargin-sm.bottommargin
             img(data-animate='fadeInLeftBig', src='images/omni.jpg', alt='Imac', width='70%', style='margin-left:15%;margin-top:5%;')
@@ -122,7 +123,7 @@ html(dir='ltr', lang='en-US')
               span
                 | From processing to package engineering, all your eRetail needs managed under one roof.
             p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus deserunt, nobis quae eos provident quidem. Quaerat expedita dignissimos perferendis, nihil quo distinctio eius architecto reprehenderit maiores.
+              | CPGIO is the only provider brands need for conducting widescale, omni channel eCommerce. One partner, one roof, all your needs, from fulfillment to marketing optimization, CPGIO is built for scale.
             a.button.button-border.button-rounded.button-large.noleftmargin.topmargin-sm(href='#') Read our Paper
           .line
         .container.clearfix
@@ -132,7 +133,7 @@ html(dir='ltr', lang='en-US')
           .col_one_third
             .feature-box.media-box
               .fbox-media
-                a(href='franchino')
+                a(href='supply-chain')
                   img(src='images/services-supply-chain.jpg', alt='Why choose Us?')
               .fbox-desc
                 h3
@@ -143,7 +144,8 @@ html(dir='ltr', lang='en-US')
           .col_one_third
             .feature-box.media-box
               .fbox-media
-                img(src='images/services-omni-channel.jpg', alt='Why choose Us?')
+                a(href='omni-channel')
+                  img(src='images/services-omni-channel.jpg', alt='Why choose Us?')
               .fbox-desc
                 h3
                   | Omni Channel.
@@ -153,10 +155,11 @@ html(dir='ltr', lang='en-US')
           .col_one_third.col_last
             .feature-box.media-box
               .fbox-media
-                img(src='images/services-customer-development.jpg', alt='Why choose Us?')
+                a(href='customer-support')
+                  img(src='images/services-customer-development.jpg', alt='Why choose Us?')
               .fbox-desc
                 h3
-                  | Customer Development.
+                  | Customer Support.
                   span.subtitle Make our Customers Happy.
                 p
                   | Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.
@@ -164,106 +167,38 @@ html(dir='ltr', lang='en-US')
           .col_one_third
             .feature-box.media-box
               .fbox-media
-                img(src='images/slider/swiper/6G.jpg', alt='Why choose Us?')
+                a(href='dev-ops')
+                  img(src='images/services-hosting.jpg', alt='Why choose Us?')
               .fbox-desc
                 h3
-                  | Marketing Automation.
+                  | Compliant Hosting & Process.
                   span.subtitle Because we are Reliable.
                 p
                   | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.
           .col_one_third
             .feature-box.media-box
               .fbox-media
-                img(src='images/slider/swiper/4BK.jpg', alt='Why choose Us?')
+                a(href='marketing-automation')
+                  img(src='images/s-market-automation.jpg', alt='Why choose Us?')
               .fbox-desc
                 h3
-                  | Automation
+                  | Customer Development.
                   span.subtitle To Redefine your Brand.
                 p
                   | Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque tempora ullam. Vitae delectus quia, consequuntur rerum molestias quo.
           .col_one_third.col_last
             .feature-box.media-box
               .fbox-media
-                img(src='images/slider/swiper/5BL.jpg', alt='Why choose Us?')
+                a(href='brand-experience')
+                  img(src='images/s-brand.jpg', alt='Why choose Us?')
               .fbox-desc
                 h3
-                  | Consulting.
+                  | High End Market Positioning.
                   span.subtitle Make our Customers Happy.
                 p
                   | Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.
           .clear
-        .section.topmargin-sm
-          .container.clearfix
-            .heading-block.center
-              h3 Testimonials
-              span Check out some of our Client Reviews
-            ul.testimonials-grid.grid-3.clearfix.nobottommargin
-              li
-                .testimonial
-                  .testi-image
-                    a(href='#')
-                      img(src='images/testimonials/1.jpg', alt='Customer Testimonails')
-                  .testi-content
-                    p
-                      | Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!
-                    .testi-meta
-                      | John Doe
-                      span XYZ Inc.
-              li
-                .testimonial
-                  .testi-image
-                    a(href='#')
-                      img(src='images/testimonials/2.jpg', alt='Customer Testimonails')
-                  .testi-content
-                    p
-                      | Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.
-                    .testi-meta
-                      | Collis Ta'eed
-                      span Envato Inc.
-              li
-                .testimonial
-                  .testi-image
-                    a(href='#')
-                      img(src='images/testimonials/7.jpg', alt='Customer Testimonails')
-                  .testi-content
-                    p
-                      | Fugit officia dolor sed harum excepturi ex iusto magnam asperiores molestiae qui natus obcaecati facere sint amet.
-                    .testi-meta
-                      | Mary Jane
-                      span Google Inc.
-              li
-                .testimonial
-                  .testi-image
-                    a(href='#')
-                      img(src='images/testimonials/3.jpg', alt='Customer Testimonails')
-                  .testi-content
-                    p
-                      | Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?
-                    .testi-meta
-                      | Steve Jobs
-                      span Apple Inc.
-              li
-                .testimonial
-                  .testi-image
-                    a(href='#')
-                      img(src='images/testimonials/4.jpg', alt='Customer Testimonails')
-                  .testi-content
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis illum totam dolore deleniti labore.
-                    .testi-meta
-                      | Jamie Morrison
-                      span Adobe Inc.
-              li
-                .testimonial
-                  .testi-image
-                    a(href='#')
-                      img(src='images/testimonials/8.jpg', alt='Customer Testimonails')
-                  .testi-content
-                    p
-                      | Porro dolorem saepe reiciendis nihil minus neque. Ducimus rem necessitatibus repellat laborum nemo quod.
-                    .testi-meta
-                      | Cyan Ta'eed
-                      span Tutsplus
+        
         .container.clearfix(style='margin-bottom:0%;')
           #oc-clients.owl-carousel.owl-carousel-full.image-carousel.carousel-widget(data-margin='30', data-loop='true', data-nav='false', data-autoplay='5000', data-pagi='false', data-items-xxs='2', data-items-xs='3', data-items-sm='4', data-items-md='5', data-items-lg='6', style='padding: 20px 0;')
             .oc-item
@@ -284,81 +219,26 @@ html(dir='ltr', lang='en-US')
             .oc-item
               a(href='http://logofury.com/')
                 img(src='images/clients/6.png', alt='Clients')
-            .oc-item
-              a(href='http://logofury.com/')
-                img(src='images/clients/7.png', alt='Clients')
-            .oc-item
-              a(href='http://logofury.com/')
-                img(src='images/clients/8.png', alt='Clients')
-            .oc-item
-              a(href='http://logofury.com/')
-                img(src='images/clients/9.png', alt='Clients')
-            .oc-item
-              a(href='http://logofury.com/')
-                img(src='images/clients/10.png', alt='Clients')
-      // #content end
-      //
-        Footer
-        =============================================
+ 
+
       footer#footer.dark
         a.button.button-full.center.tright(style="margin-top:-170px;background-color:#ff9f00;'>\
         <div class=", container='')
           | Contact us today for a custom proposal. 
-          strong Reach Out
+          strong info@cpg.io
           i.icon-caret-right(style='top:4px;')
-        //
-          Copyrights
-          =============================================
+
         #copyrights
           .container.clearfix
             .col_half
               | Copyrights © 2017 All Rights Reserved by CPG.IO Inc.
               br
-              .copyright-links
-                a(href='#') Terms of Use
-                |  / 
-                a(href='#') Privacy Policy
             .col_half.col_last.tright
-              .fright.clearfix
-                a.social-icon.si-small.si-borderless.si-facebook(href='#')
-                  i.icon-facebook
-                  i.icon-facebook
-                a.social-icon.si-small.si-borderless.si-twitter(href='#')
-                  i.icon-twitter
-                  i.icon-twitter
-                a.social-icon.si-small.si-borderless.si-gplus(href='#')
-                  i.icon-gplus
-                  i.icon-gplus
-                a.social-icon.si-small.si-borderless.si-pinterest(href='#')
-                  i.icon-pinterest
-                  i.icon-pinterest
-                a.social-icon.si-small.si-borderless.si-vimeo(href='#')
-                  i.icon-vimeo
-                  i.icon-vimeo
-                a.social-icon.si-small.si-borderless.si-github(href='#')
-                  i.icon-github
-                  i.icon-github
-                a.social-icon.si-small.si-borderless.si-yahoo(href='#')
-                  i.icon-yahoo
-                  i.icon-yahoo
-                a.social-icon.si-small.si-borderless.si-linkedin(href='#')
-                  i.icon-linkedin
-                  i.icon-linkedin
-              .clear
               i.icon-envelope2
               |  info@CPG.IO 
               span.middot ·
               i.icon-headphones
-              |  +91-11-6541-6369 
-              span.middot ·
-              i.icon-skype2
-              |  CPG.IO
-        // #copyrights end
-      // #footer end
-      // #wrapper end
-      //
-        Go To Top
-        =============================================
+              |  773-321-0000
       #gotoTop.icon-angle-up
       //
         External JavaScripts

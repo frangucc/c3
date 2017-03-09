@@ -1,0 +1,85 @@
+doctype html
+html(dir='ltr', lang='en-US')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='author', content='SemiColonWeb')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='style.css', type='text/css')
+    link(rel='stylesheet', href='css/dark.css', type='text/css')
+    link(rel='stylesheet', href='css/font-icons.css', type='text/css')
+    link(rel='stylesheet', href='css/animate.css', type='text/css')
+    link(rel='stylesheet', href='css/magnific-popup.css', type='text/css')
+    link(rel='stylesheet', href='css/responsive.css', type='text/css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title CPG.IO
+
+  body.stretched.dark
+    #wrapper.clearfix
+      #most-toppest
+      section#slider.slider-parallax.full-screen.page-section.dark.clearfix
+        .slider-parallax-inner
+          .fslider(data-speed='2000', data-pause='6000', data-animation='fade', data-arrows='false', data-pagi='false', style='position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;')
+            .flexslider(style='height: 100% !important;')
+              .slider-wrap(style='height: inherit;')
+                .slide(style="background: url('images/services-customer-development.jpg') center center; background-size: cover; height: 100% !important;")
+          a.one-page-arrow(href='#', data-scrollto='#section-couple')
+            i.icon-angle-down.infinite.animated.fadeInDown
+      header#header
+        #header-wrap
+          .container.clearfix
+            #primary-menu-trigger
+              i.icon-reorder
+            #logo
+            nav#primary-menu.style-2.center
+              ul.one-page-menu
+                li
+                  a(href='index-services', data-href='#most-fulfillment')
+                    div Home
+                li
+                  a(href='#', data-href='#ticketing')
+                    div Ticketing
+                li
+                  a(href='#', data-href='#ticketing')
+                    div Order Tracking
+                li
+                  a(href='#', data-href='#ticketing')
+                    div Phone Support
+
+
+      section#content
+        .content-wrap
+          .container.clearfix
+            #ticketing.heading-block.title-left.page-section
+              h2 Customer Support
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/support-ticketing.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Ticketing
+                    span.subtitle CPGIO ticketing system tracks and keeps a scorecard of issues.
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/support-order-tracking.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Order Tracking
+                    span.subtitle For both API and customer inquiry related order tracking issues.
+            .col_one_third.col_last
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/support-phone.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Phone Support
+                    span.subtitle Route calls for order tracking to CPGIO.
+          .clear
+          
+      // #content end
+      //
+        Footer
+        =============================================
+    include snippets/footer

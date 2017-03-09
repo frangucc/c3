@@ -1,0 +1,80 @@
+doctype html
+html(dir='ltr', lang='en-US')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='author', content='SemiColonWeb')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='style.css', type='text/css')
+    link(rel='stylesheet', href='css/dark.css', type='text/css')
+    link(rel='stylesheet', href='css/font-icons.css', type='text/css')
+    link(rel='stylesheet', href='css/animate.css', type='text/css')
+    link(rel='stylesheet', href='css/magnific-popup.css', type='text/css')
+    link(rel='stylesheet', href='css/responsive.css', type='text/css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title CPG.IO
+
+  body.stretched.dark
+    #wrapper.clearfix
+      #most-toppest
+      section#slider.slider-parallax.full-screen.page-section.dark.clearfix
+        .slider-parallax-inner
+          .fslider(data-speed='2000', data-pause='6000', data-animation='fade', data-arrows='false', data-pagi='false', style='position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;')
+            .flexslider(style='height: 100% !important;')
+              .slider-wrap(style='height: inherit;')
+                .slide(style="background: url('images/services-marketing.jpg') center center; background-size: cover; height: 100% !important;")
+          a.one-page-arrow(href='#', data-scrollto='#section-couple')
+            i.icon-angle-down.infinite.animated.fadeInDown
+      header#header
+        #header-wrap
+          .container.clearfix
+            #primary-menu-trigger
+              i.icon-reorder
+            #logo
+            nav#primary-menu.style-2.center
+              ul.one-page-menu
+                li
+                  a(href='index-services', data-href='#most-fulfillment')
+                    div Home
+                li
+                  a(href='#', data-href='#ticketing')
+                    div Channel Programs
+                li
+                  a(href='#', data-href='#ticketing')
+                    div Ad Campaigns
+                li
+                  a(href='#', data-href='#ticketing')
+                    div Drip Campaigns
+
+
+      section#content
+        .content-wrap
+          .container.clearfix
+            #ticketing.heading-block.title-left.page-section
+              h2 Marketing & Growth Automation
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/market-channel.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Growth in each channel
+                    span.subtitle CPGIO has deep experience with every channels unique marketing programs.
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/market-ads.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Cost Based Advertising
+                    span.subtitle Consolidated management and view of CPC, PPC and Display campaigns.
+            .col_one_third.col_last
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/market-drip.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Email Marketing
+                    span.subtitle Segmentation and sophisticated drip campaigns as quickly as you can conceive them.
+          .clear
+    include snippets/footer

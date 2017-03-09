@@ -28,27 +28,37 @@ router.get('/products', function (req, res, next) {
   })
 })
 
-router.get('/', function (req, res, next) {
-  res.render('products', {
-    'title': 'Products',
-    'products': req.products
-  })
+router.get('/', function (req, res) {
+  res.render('index-services');
 })
 
-router.get('/home', function(req, res) {
-  res.render('index-two')
-})
-
-router.get('/franchino', function(req, res) {
-  res.render('index-rest');
-});
-
-router.get('/index-fullscreen-slider', function(req ,res) {
-  res.render('index-fullscreen-slider');
-});
 
 router.get('/index-services', function(req, res) {
   res.render('index-services');
+});
+
+router.get('/supply-chain', function(req, res) {
+  res.render('index-supply-chain');
+});
+
+router.get('/omni-channel', function(req, res) {
+  res.render('index-omni');
+});
+
+router.get('/customer-support', function(req, res) {
+  res.render('index-customer-support');
+});
+
+router.get('/dev-ops', function(req, res) {
+  res.render('index-hosting');
+});
+
+router.get('/marketing-automation', function(req, res) {
+  res.render('index-marketing');
+});
+
+router.get('/brand-experience', function(req, res) {
+  res.render('index-brand');
 });
 
 

@@ -3,9 +3,6 @@ html(dir='ltr', lang='en-US')
   head
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
     meta(name='author', content='SemiColonWeb')
-    //
-      Stylesheets
-      =============================================
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='css/bootstrap.css', type='text/css')
     link(rel='stylesheet', href='style.css', type='text/css')
@@ -15,10 +12,8 @@ html(dir='ltr', lang='en-US')
     link(rel='stylesheet', href='css/magnific-popup.css', type='text/css')
     link(rel='stylesheet', href='css/responsive.css', type='text/css')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    //
-      Document Title
-      =============================================
     title CPG.IO
+    
   body.stretched.dark
     //
       Document Wrapper
@@ -60,14 +55,8 @@ html(dir='ltr', lang='en-US')
                   a(href='#', data-href='#section-packaging')
                     div Packaging
                 li
-                  a(href='#', data-href='#section-oms')
+                  a(href='#', data-href='#section-orders')
                     div Order Management
-                li
-                  a(href='#', data-href='#section-gallery')
-                    div Replenishment
-                li
-                  a(href='#', data-href='#section-gallery')
-                    div Returns
             // #primary-menu end
       // #header end
       //
@@ -81,125 +70,107 @@ html(dir='ltr', lang='en-US')
             .col_one_third
               .feature-box.center.media-box.fbox-bg
                 .fbox-media
-                  img(src='images/s-onboarding.jpg', alt='Image')
+                  img(src='images/chain-onboarding.jpg', alt='Image')
                 .fbox-desc
                   h3
-                    | Inventory Onboarding
-                    span.subtitle Custom packaging for your line.
+                    | Slotting Your Inventory
+                    span.subtitle Landing your first shipment & allocating space.
             .col_one_third
               .feature-box.center.media-box.fbox-bg
                 .fbox-media
-                  img(src='images/s-data.jpg', alt='Image')
+                  img(src='images/chain-erp.jpg', alt='Image')
                 .fbox-desc
                   h3
-                    | Data Setup
-                    span.subtitle Srubbed and dubbed.
+                    | Import Inventory Data
+                    span.subtitle SKU Setup in ERP, quantities and special instructions.
             .col_one_third.col_last
               .feature-box.center.media-box.fbox-bg
                 .fbox-media
-                  img(src='images/s-pick.jpg', alt='Image')
+                  img(src='images/chain-pick.jpg', alt='Image')
                 .fbox-desc
                   h3
-                    | Pick, Pack, Ship
-                    span.subtitle Same day before 6pm
+                    | From shelf to carrier
+                    span.subtitle Orders processed with care, same day before 6pm.
           .clear
           .container.clearfix(style='margin-top:40px;')
-            #section-handling.heading-block.title-left.page-section
+            #section-packaging.heading-block.title-left.page-section
               h2 Handling
             .col_one_third
               .feature-box.center.media-box.fbox-bg
                 .fbox-media
-                  img(src='images/s-truck.jpg', alt='Image')
+                  img(src='images/chain-storage.jpg', alt='Image')
                 .fbox-desc
                   h3
-                    | Storage
-                    span.subtitle Custom packaging for your line.
+                    | Door to Door
+                    span.subtitle Full support and fully insured.
             .col_one_third
               .feature-box.center.media-box.fbox-bg
                 .fbox-media
-                  img(src='images/s-fridge.jpg', alt='Image')
+                  img(src='images/chain-temp.jpg', alt='Image')
                 .fbox-desc
                   h3
-                    | Refrigerated Goods
-                    span.subtitle Temperature stable goods.
+                    | Refrigerated Items
+                    span.subtitle Full support for perishable goods.
             .col_one_third.col_last
               .feature-box.center.media-box.fbox-bg
                 .fbox-media
-                  img(src='images/s-lot.jpg', alt='Image')
+                  img(src='images/chain-lot.jpg', alt='Image')
                 .fbox-desc
                   h3
-                    | Lot Tracking
-                    span.subtitle Perishables, non-movers, closeouts
+                    | Dated and Numbered
+                    span.subtitle All lots are tracked as necessary.
           .clear
+          .container.clearfix(style='margin-top:40px;')
+            #section-packaging.heading-block.title-left.page-section
+              h2 Packaging
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/chain-package.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Custom Package Solutions
+                    span.subtitle Frustration free packaging for enhanced customer experience.
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/chain-carrier.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Best Shipping Rates
+                    span.subtitle Best solutions, rates and routes with shippers.
+            .col_one_third.col_last
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/chain-compliance.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Shipping Safety Governance
+                    span.subtitle Material safety and code conmpliance with carriers.
+          .clear
+          .container.clearfix(style='margin-top:40px;')
+            #section-returns.heading-block.title-left.page-section
+              h2 Order Management
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/chain-processing.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | EDI Order Processing
+                    span.subtitle From checkout to order shipped, our ERP is fully automated.
+            .col_one_third
+              .feature-box.center.media-box.fbox-bg
+                .fbox-media
+                  img(src='images/chain-returns.jpg', alt='Image')
+                .fbox-desc
+                  h3
+                    | Return Management
+                    span.subtitle A complete RMA program with built-in ticketing and reporting.
+          .clear
+
       // #content end
       //
         Footer
         =============================================
-      footer#footer.dark
-        //
-          Copyrights
-          =============================================
-        #copyrights
-          .container.center.clearfix
-            | Copyrights © 2017 All Rights Reserved by CPG.IO
-            br
-            .copyright-links
-              a(href='') Contact Us
-              |  / 
-              a(href='http://twitter.com/smclweb') Twitter
-        // #copyrights end
-      // #footer end
-    // #wrapper end
-    //
-      Go To Top
-      =============================================
-    #gotoTop.icon-angle-up
-    //
-      External JavaScripts
-      =============================================
-    script(type='text/javascript', src='js/jquery.js')
-    script(type='text/javascript', src='js/plugins.js')
-    //
-      Footer Scripts
-      =============================================
-    script(type='text/javascript', src='js/functions.js')
-    script(type='text/javascript', src='https://maps.google.com/maps/api/js?key=YOUR_API_KEY')
-    script(type='text/javascript', src='js/jquery.gmap.js')
-    script(type='text/javascript').
-      jQuery(document).ready( function($){
-      var newDate = new Date(2017, 2, 31);
-      $('#countdown-ex1').countdown({until: newDate});
-      });
-      jQuery(window).load(function(){
-      var t=setTimeout(function(){
-      $( '.flexslider .slide' ).resize();
-      },500);
-      });
-      $('#google-map1').gMap({
-      address: 'Melbourne, Australia',
-      maptype: 'ROADMAP',
-      zoom: 13,
-      markers: [
-      {
-      address: 'Westgate Park, Melbourne, Australia',
-      html: 'Cocktail Party'
-      },
-      {
-      address: 'Crown Casino and Entertainment Complex, Melbourne, Australia',
-      html: 'Wedding Ceremony'
-      },
-      {
-      address: 'Federation Square, Melbourne, Australia',
-      html: 'After Wedding Party'
-      }
-      ],
-      doubleclickzoom: false,
-      controls: {
-      panControl: false,
-      zoomControl: true,
-      mapTypeControl: false,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false
-      }
-      });
+    include snippets/footer
