@@ -1559,6 +1559,15 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 
 }
 
+@media (max-width: 992px) {
+
+	.slider-caption.slider-caption-left p {
+		display:none !important;
+	}
+
+
+}
+
 #header.split-menu #primary-menu {
 	float: none;
 	margin: 0;
